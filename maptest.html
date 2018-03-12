@@ -9,8 +9,6 @@
         #menu,#menubus{width:100%;height: 30px; background-color: #f5f5f5;font-family:"微软雅黑";}
         label{font-size:12px;}
     </style>
-    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=6cb3f458a482fcd009414370808ea219"></script>
-    <script type="text/javascript" src="http://api.map.baidu.com/library/Heatmap/2.0/src/Heatmap_min.js"></script>
     <title>JYH MapTest</title>
 </head>
 <body>
@@ -28,80 +26,7 @@ map.addControl(new BMap.MapTypeControl({
 map.setCurrentCity("深圳");          // 设置地图显示的城市 此项是必须设置的
 map.enableScrollWheelZoom(true);  
     </script>
-<div id="menu" style="border-bottom:#cccccc solid 1.5px;" >
-    <div style="float:left;margin: 3px 10px ">
-        <label>地铁线路查询：</label><input type="text" id="linename" name="linename" value="请输入..." style="width:100px;font-style: italic;color: gray" onfocus="this.value=''">
-        <input type="button" value="show" id="subwayshow">
-    </div>
-    <div style="float:left;margin: 3px 20px">
-        <label>地铁站点查询：</label>
-        <select style="width: 100px" name="selectline" id="selectline" >
-            <option value="choose">请选择线路</option>
-            <option value="地铁一号线">地铁一号线</option>
-            <option value="地铁二号线">地铁二号线</option>
-            <option value="地铁三号线">地铁三号线</option>
-            <option value="地铁四号线">地铁四号线</option>
-            <option value="地铁五号线">地铁五号线</option>
-            <option value="地铁七号线">地铁七号线</option>
-            <option value="地铁九号线">地铁九号线</option>
-            <option value="地铁十一号线">地铁十一号线</option>
-        </select>
-        <select style="width: 90px" name="selectstation" id="selectstation">
-            <option value="null">-空-</option>
-        </select>
-    </div>
-    <div style="float:left;margin:3px ">
-        <label>站点人口流向：</label>
-        <select style="width: 100px" name="selectline2" id="selectline2" >
-            <option value="choose">请选择线路</option>
-            <option value="地铁一号线">地铁一号线</option>
-            <option value="地铁二号线">地铁二号线</option>
-            <option value="地铁三号线">地铁三号线</option>
-            <option value="地铁四号线">地铁四号线</option>
-            <option value="地铁五号线">地铁五号线</option>
-            <option value="地铁七号线">地铁七号线</option>
-            <option value="地铁九号线">地铁九号线</option>
-            <option value="地铁十一号线">地铁十一号线</option>
-        </select>
-        <select style="width: 90px" name="selectstation2" id="selectstation2">
-            <option value="null">-空-</option>
-        </select>
-    </div>
-    <div style="float:left;margin: 3px 20px" >
-        <label>热力图: </label><input type="radio" name="hotpower" value="hotshow" id="hotshow"><label> 是</label>
-        <input type="radio" name="hotpower" value="hotnotshow" id="hotnotshow"><label> 否</label>
-        <div id="hotpowerdiv" style="float:right;visibility: hidden">
-            <label style="margin-left: 10px">按时段查询：</label>
-            <select name="selecttime" id="selecttime" >
-                <option value="all">全天</option>
-                <option value="6">6点--7点</option>
-                <option value="7">7点--8点</option>
-                <option value="8">8点--9点</option>
-                <option value="9">9点--10点</option>
-                <option value="10">10点--11点</option>
-                <option value="11">11点--12点</option>
-                <option value="12">12点--13点</option>
-                <option value="13">13点--14点</option>
-                <option value="14">14点--15点</option>
-                <option value="15">15点--16点</option>
-                <option value="16">16点--17点</option>
-                <option value="17">17点--18点</option>
-                <option value="18">18点--19点</option>
-                <option value="19">19点--20点</option>
-                <option value="20">20点--21点</option>
-                <option value="21">21点--22点</option>
-                <option value="22">22点--23点</option>
-                <option value="23">23点--24点</option>
-            </select>
-        </div>
-    </div>
-</div>
-<div id="menubus">
-    <div style="float:left;margin: 3px 10px ">
-        <label>公交线路查询：</label><input type="text" id="busname" name="busname" value="请输入..." style="width:100px;font-style: italic;color: gray" onfocus="this.value=''">
-        <input type="button" value="show" id="busshow">
-    </div>
-</div>
+
     <div id="allmap">
 
     </div>
